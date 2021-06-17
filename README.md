@@ -12,7 +12,7 @@ What is great about this plugin:
 - Everything saved in cookies 
 - U can register your own commands
 
-#Cmds
+# Cmds
 
 By default:
 
