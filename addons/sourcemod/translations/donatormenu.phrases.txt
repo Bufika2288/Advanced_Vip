@@ -1,0 +1,506 @@
+"Phrases"
+{
+//CHAT 
+// Note: You can use colors here
+
+	"Chat Tag"
+	{
+		"en"		"[{orange}Donator-Menu{default}]"
+		"hu"		"[{orange}Donator-Menu{default}]"
+	}
+	
+	"No Access"
+	{
+		"en"		"{red}You doesnt have access to use this command."
+		"hu"		"{red}Nincs hozzáférésed a parancs használatához."
+	}
+	
+	"FVC Failed"
+	{
+		"en"		"{default}The player you selected is no longer available."
+		"hu"		"{default}Az általad kiválasztott játékos már nem elérhető."
+	}
+	
+	"JoinMSG"
+	{
+		"#format" 	"{1:s}"
+		"en"		"{1:s} has joined the game."
+		"hu"		"{1:s} csatlakozott a játékhoz."
+	}
+	
+	"DisconnectMSG"
+	{
+		"#format" 	"{1:s}"
+		"en"		"{1:s} left the game."
+		"hu"		"{1:s} elhagyta a játékot."
+	}
+	
+	"SetNormalColor"
+	{
+		"en"		"{default}You removed your color successfully."
+		"hu"		"{default}Sikeresen eltávoltitottad a kinézet szinedet."
+	}
+	
+	"SetColor"
+	{
+		"en"		"{default}You changed your color to: "
+		"hu"		"{default}Megváltoztattad a szinedet, új model szined: "
+	}
+	
+	"Cant Use Sound Now"
+	{
+		"en"		"{default}This sound is on {red}cooldown{default} :("
+		"hu"		"{default}Még {red}Várnod{default} kell egy kicsit hogy újra használhatsd a hangokat :("
+	}
+	
+	"Cant Use FVK Now"
+	{
+		"en"		"{default}Fake Vac Kick is on {red}cooldown{default} :("
+		"hu"		"{default}Még {red}Várnod{default} kell egy kicsit hogy újra használhatsd a Hamis Vac kirugást :("
+	}
+	
+	"Sound Played successfully"
+	{
+		"en"		"{default}Sound Played {green}successfully {default}:)"
+		"hu"		"{default}Hang {green}Sikeresen Lejátszva {default}:)"
+	}
+	
+	"Spawn Sucess"
+	{
+		"en"		"{default}Spawn Used {green}Sucessfully:)"
+		"hu"		"{default}Sikeresen elhasználtad az urjaéledésedet:)"
+	}
+	
+	"Spawn Used"
+	{
+		"en"		"{default}Spawn {red}Failed {default}(You already used your respawn this round)"
+		"hu"		"{default}Már elhasználtad e körben az újraéledésedet:)"
+	}
+	
+	"Cant Use Spawn (Player Still Alive)"
+	{
+		"en"		"{default}Spawn {red}Failed {default}(You are not {red}dead{default})"
+		"hu"		"{default}Csak halottként tudod használni ezt a parancsot"
+	}
+	
+	"Spawn not enabled"
+	{
+		"en"		"{default}This function is {red}disabled"
+		"hu"		"{default}Ez a funkció nincs bekapcsolva :/"
+	}
+	
+	"Spawn Invalid Team"
+	{
+		"#format" 	"{1:s}"
+		"en"		"{default}Spawn {red}Failed {default}(Your team {red}{1:s})!"
+		"hu"		"{default}Egy valid csapatban kell lenned hogy használhatsd ezt a parancsot! Csapatod: {red}{1:s}"
+	}
+//Menus Titles
+
+	"Main Menu Title"
+	{
+		"en"		"Donator menu"
+		"hu"		"Donator Fömenu"
+	}
+	
+	"General Menu Title"
+	{
+		"en"		"Main Menu"
+		"hu"		"Main Menu"
+	}
+	
+	"Body Menu Title"
+	{
+		"en"		"Body Menu"
+		"hu"		"Body Menu"
+	}
+	
+	"Body Size Menu Title"
+	{
+		"en"		"Select Body Type:"
+		"hu"		"Válassz Test Méretet:"
+	}
+	
+	"Troll Menu Title"
+	{
+		"en"		"Troll Menu:"
+		"hu"		"Troll Menu:"
+	}
+	
+	"Fun Menu Title"
+	{
+		"en"		"Fun Menu:"
+		"hu"		"Fun Menu:"
+	}
+	
+	"Item Menu Title"
+	{
+		"en"		"Items:"
+		"hu"		"Items:"
+	}
+	
+	"FVK Menu Title"
+	{
+		"en"		"Fake VAC kick"
+		"hu"		"Hamis VAC kirúgás"
+	}
+	
+	"Spawn items Menu Title"
+	{
+		"en"		"Available items:"
+		"hu"		"Available items:"
+	}
+	
+	"Body Color Menu Title"
+	{
+		"en"		"Body Color:"
+		"hu"		"Model szinek:"
+	}
+	
+	"Transparent Menu Title"
+	{
+		"en"		"Set Transparency"
+		"hu"		"Set Transparency"
+	}
+	
+	"Other Stuff Menu Title"
+	{
+		"en"		"Other Fun Stuff"
+		"hu"		"Other Fun Stuff"
+	}
+	
+	"Perk Menu Title"
+	{
+		"en"		"Perk Menu"
+		"hu"		"Perk Menu"
+	}
+	
+	"PlaySound Menu Title"
+	{
+		"en"		"PlaySound Menu"
+		"hu"		"PlaySound Menu"
+	}
+	
+//Menu Buttons
+
+	
+	"General Functions"
+	{
+		"en"		"General Functions"
+		"hu"		"General Functions"
+	}
+	
+	"Fun Functions"
+	{
+		"en"		"Fun Functions"
+		"hu"		"Fun Functions"
+	}
+	
+	"Items"
+	{
+		"en"		"Items"
+		"hu"		"Items"
+	}
+	
+	"Perks"
+	{
+		"en"		"Perks"
+		"hu"		"Perks"
+	}
+	
+	
+//Fun Menu 
+
+	"Body Modifications"
+	{
+		"en"		"Body Modifications"
+		"hu"		"Body Modifications"
+	}
+	
+	"Other Fun stuff"
+	{
+		"en"		"Other Fun stuff"
+		"hu"		"Other Fun stuff"
+	}
+	
+	"Troll Functions"
+	{
+		"en"		"Troll Functions"
+		"hu"		"Troll Funkciók"
+	}
+	
+	"Spawn items"
+	{
+		"en"		"Spawn items"
+		"hu"		"Spawn items"
+	}
+	
+	"Raining Money"
+	{
+		"en"		"Raining Money"
+		"hu"		"Pénz dobálás"
+	}
+	
+	"Open Fake Case"
+	{
+		"en"		"Open Fake Case"
+		"hu"		"Hamis Ládanyitás"
+	}
+	
+	"Fake VAC Kick"
+	{
+		"en"		"Fake VAC Kick"
+		"hu"		"Hamis VAC Kirugás"
+	}
+	
+	"Play Fake Sounds"
+	{
+		"en"		"Play Fake Sounds"
+		"hu"		"Play Fake Sounds"
+	}
+	
+//Body Menu 
+
+	"Body Color"
+	{
+		"en"		"Body Color"
+		"hu"		"Test Szin"
+	}
+	
+	"Body Size"
+	{
+		"en"		"Body Size"
+		"hu"		"Test Méret"
+	}
+	
+	"Body Transparency"
+	{
+		"en"		"Body Transparency"
+		"hu"		"Test Láthatóság"
+	}
+	
+	"Transparency"
+	{
+		"en"		"Transparency:"
+		"hu"		"Láthatatlanság:"
+	}
+	
+	
+//Body Types
+
+	"body_superfat"
+	{
+		"en"		"Super Fat"
+		"hu"		"Nagyon Duci"
+	}
+	
+	"body_fat"
+	{
+		"en"		"Fat"
+		"hu"		"Duci"
+	}
+	
+	"body_normal"
+	{
+		"en"		"Normal"
+		"hu"		"Normális"
+	}
+	
+	"body_skinny"
+	{
+		"en"		"Skinny"
+		"hu"		"Vékony"
+	}
+	
+	"body_superskinny"
+	{
+		"en"		"Supper Skinny"
+		"hu"		"Nagyon Vékony"
+	}
+	
+//Body Colors
+
+
+	"Normal_Body_Color"
+	{
+		"en"		"Normal"
+		"hu"		"Normal"
+	}
+	
+	"Green"
+	{
+		"en"		"Green"
+		"hu"		"Zöld"
+	}
+	
+	"Red"
+	{
+		"en"		"Red"
+		"hu"		"Piros"
+	}
+	
+	"Blue"
+	{
+		"en"		"Blue"
+		"hu"		"Kék"
+	}
+	"Gold"
+	{
+		"en"		"Gold"
+		"hu"		"Arany Sárga"
+	}
+	
+	"Black"
+	{
+		"en"		"Black"
+		"hu"		"Fekete"
+	}
+	
+	"Cyan"
+	{
+		"en"		"Cyan"
+		"hu"		"Cyan kék"
+	}
+	
+	"Turquoise"
+	{
+		"en"		"Turquoise"
+		"hu"		"Turquoise kék"
+	}
+	
+	"SkyBlue"
+	{
+		"en"		"SkyBlue"
+		"hu"		"Égszínkék"
+	}
+	
+	"Yellow"
+	{
+		"en"		"Yellow"
+		"hu"		"Sárga"
+	}
+	
+	"Pink"
+	{
+		"en"		"Pink"
+		"hu"		"Pink"
+	}
+	
+	"Purple"
+	{
+		"en"		"Purple"
+		"hu"		"Lila"
+	}
+	
+	"Gray"
+	{
+		"en"		"Gray"
+		"hu"		"Szürke"
+	}
+
+	
+//Items
+
+	"HealthShot"
+	{
+		"en"		"HealthShot:"
+		"hu"		"HealthShot:"
+	}
+	
+	"Tagrenade"
+	{
+		"en"		"Tagrenade:"
+		"hu"		"Tagrenade:"
+	}
+	
+	"Zeus"
+	{
+		"en"		"Taser:"
+		"hu"		"Sokkoló:"
+	}
+	
+	"Defuse Kit"
+	{
+		"en"		"Defuse Kit:"
+		"hu"		"Hatástalanitó készlet:"
+	}
+	
+//General
+
+	"Bunnyhopp"
+	{
+		"en"		"Bunnyhopp:"
+		"hu"		"Nyuszi ugrálás:"
+	}
+	
+	"HP on spawn"
+	{
+		"en"		"+ HP on spawn:"
+		"hu"		"+ HP Eledéskor:"
+	}
+	
+	"Armor on spawn"
+	{
+		"en"		"+ Armor on spawn:"
+		"hu"		"+ Páncél Éledéskor:"
+	}
+	
+	"Cash on Round end"
+	{
+		"en"		"Cash on Round Start:"
+		"hu"		"Kör eleji plusz pénz:"
+	}
+	
+//Spawn Menu 
+
+	"Spawn Snow"
+	{
+		"en"		"Snowball Pile"
+		"hu"		"Hókupac"
+	}
+	
+	"Spawn SoccerBall"
+	{
+		"en"		"SoccerBall"
+		"hu"		"Focilabda"
+	}
+	
+	"Spawn Chicken"
+	{
+		"en"		"Spawn Chicken"
+		"hu"		"Csirke"
+	}
+	
+		
+//Fakse Sounds 
+
+	"Bomb Has Been Defused Sound"
+	{
+		"en"		"Bomb Has Been Defused"
+		"hu"		"Bomb Has Been Defused"
+	}
+	
+	"Bomb Has Been Planted Sound"
+	{
+		"en"		"Bomb Has Been Planted"
+		"hu"		"Bomb Has Been Planted"
+	}
+	
+	"Hostage Rescue Sound"
+	{
+		"en"		"Hostage Rescue"
+		"hu"		"Hostage Rescue"
+	}
+	
+	"CT win Sound"
+	{
+		"en"		"CT win"
+		"hu"		"CT win"
+	}
+	
+	"T win Sound"
+	{
+		"en"		"T win"
+		"hu"		"T win"
+	}
+}
