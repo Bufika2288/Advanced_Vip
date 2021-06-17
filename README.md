@@ -6,11 +6,11 @@ Its a Basic Donator/Vip menu.
 What is great about this plugin:
 
 
-1. 100% Translate support
-1. Chat processor support
-1. Fully customizable
-1. Everything saved in cookies 
-1. U can register your own commands
+- 100% Translate support
+- Chat processor support
+- Fully customizable
+- Everything saved in cookies 
+- U can register your own commands
 
 #Cmds
 
