@@ -16,8 +16,8 @@ What is great about this plugin:
 
 By default:
 
-*sm_dm 
-*sm_donator 
-*sm_donatormenu
+- sm_dm 
+- sm_donator 
+- sm_donatormenu
 
 but u can register your own with ```sm_donatormenu_commands``` cvar
