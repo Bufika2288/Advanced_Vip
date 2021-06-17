@@ -46,7 +46,7 @@ Menu BuildSizeMenu()
 	Menu menu = new Menu(Menu_Size);
 	
 	Format(buffer, sizeof(buffer), "%T", "body_superfat", LANG_SERVER);
-	menu.AddItem("body_fat", buffer);
+	menu.AddItem("body_superfat", buffer);
 	Format(buffer, sizeof(buffer), "%T", "body_fat", LANG_SERVER);
 	menu.AddItem("body_fat", buffer);
 	Format(buffer, sizeof(buffer), "%T", "body_normal", LANG_SERVER);
@@ -136,7 +136,7 @@ Menu BuildTransparentMenu(int client)
 	Menu menu = new Menu(Menu_Transparent);
 	
 	Format(buffer, sizeof(buffer), "%T", "Transparency", LANG_SERVER);
-	Format(buffer2, sizeof(buffer2), "%s", gb_Transparency[ client ] ? "[✔️]":"[❌]");
+	Format(buffer2, sizeof(buffer2), "%s", gb_Transparency[ client ] ? "[Enabled]":"[Disabled]");
 	Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 	menu.AddItem("Transparency", buffer3);
 	
@@ -308,25 +308,30 @@ public void ScaleEntity(int client, int ScaleType, float fScale)
 
 public void Client_SuperFat(int client)
 {
-	ScaleEntity(client, 1, 1.7);
+	ScaleEntity(client, 1, 1.6);
+	SetClientCookie(client, g_hCookieClient_BodySize, "SuperFat");
 }
 
 public void Client_Fat(int client)
 {
-	ScaleEntity(client, 1, 1.4);
+	ScaleEntity(client, 1, 1.3);
+	SetClientCookie(client, g_hCookieClient_BodySize, "Fat");
 }
 
 public void Client_Normal(int client)
 {
 	ScaleEntity(client, 1, 1.0);
+	SetClientCookie(client, g_hCookieClient_BodySize, "BodyNormal");
 }
 
 public void Client_Skinny(int client)
 {
 	ScaleEntity(client, 1, 0.7);
+	SetClientCookie(client, g_hCookieClient_BodySize,"Skinny");
 }
 
 public void Client_SuperSkinny(int client)
 {
 	ScaleEntity(client, 1, 0.5);
+	SetClientCookie(client, g_hCookieClient_BodySize, "SuperSkinny");
 }

@@ -25,6 +25,7 @@
 char g_sTag[128];
 
 char g_sColor[8];
+char g_sBodySize[12];
 
 char g_sMenu_Flag[32];
 
@@ -64,7 +65,7 @@ Handle sm_restrick_module_cmds = INVALID_HANDLE;
 Handle sm_spawn_enable = INVALID_HANDLE;
 
 Handle sm_donatormenu_flag = INVALID_HANDLE;
-Handle sm_donatormenu_ver = INVALID_HANDLE;
+//Handle sm_donatormenu_ver = INVALID_HANDLE;
 Handle sm_bodysize_enable = INVALID_HANDLE;
 Handle sm_bodycolor_enable = INVALID_HANDLE;
 
@@ -86,6 +87,7 @@ ConVar sm_spawn_commands;
 
 
 Handle g_hCookieClient_Color = INVALID_HANDLE;
+Handle g_hCookieClient_BodySize = INVALID_HANDLE;
 
 Handle g_hCookieClient_PerkBunnyhop = INVALID_HANDLE;
 Handle g_hCookieClient_PerkHp = INVALID_HANDLE;
@@ -199,6 +201,7 @@ public void OnPluginStart()
 	
 	// Cookie kezelés
 	g_hCookieClient_Color = RegClientCookie("ClientColor", "Stores the color of the Client", CookieAccess_Private);
+	g_hCookieClient_BodySize = RegClientCookie("ClientBodySize", "Stores the size of the Client", CookieAccess_Private);
 	
 	g_hCookieClient_PerkBunnyhop = RegClientCookie("Bunnyhop", "Value of Bunnyhop perk (True / False)", CookieAccess_Private);
 	g_hCookieClient_PerkHp = RegClientCookie("PerkHp", "Value of Hp perk (True / False)", CookieAccess_Private);
@@ -227,6 +230,7 @@ public void OnPluginStart()
         else 
 		{
     		g_sColor[i] = 0;
+    		g_sBodySize[i] = 0;
     		gb_PerkBunnyhop[i] = false;
     		gb_PerkHp[i] = false;
     		gb_PerkArmor[i] = false;
@@ -257,6 +261,7 @@ public void OnClientCookiesCached(int client)
 	char sValue[8];
 	
 	GetClientCookie(client, g_hCookieClient_Color, g_sColor, sizeof(g_sColor));
+	GetClientCookie(client, g_hCookieClient_BodySize, g_sBodySize, sizeof(g_sBodySize));
 	
 	
 	//HealthShot
@@ -521,6 +526,10 @@ public void Event_PlayerSpawn(Event event, const char[] name, bool dontBroadcast
 	{
 		CreateTimer(2.5, Timer_SetColor, client);
 	}
+	if((g_sBodySize[client] != 0) && (CheckAdminFlags(client, ReadFlagString(g_sMenu_Flag))))
+	{
+		CreateTimer(2.5, Timer_SetBodyType, client);
+	}
 	
 	if((gb_Transparency[client] == true) && (CheckAdminFlags(client, ReadFlagString(g_sMenu_Flag))))
 	{
@@ -628,6 +637,15 @@ public Action Timer_SetColor(Handle timer, any client)
 
 }
 
+public Action Timer_SetBodyType(Handle timer, any client)
+{
+	if(IsPlayerAlive(client)) 
+	{
+		Set_Player_BodyType(GetClientUserId(client), g_sBodySize);
+	}
+
+
+}
 public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3], float angles[3], int &weapon)
 {
 	if (gb_PerkBunnyhop[client] && IsPlayerAlive(client))

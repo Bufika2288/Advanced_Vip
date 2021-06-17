@@ -447,7 +447,7 @@
 	
 	"Cash on Round end"
 	{
-		"en"		"Cash on Round Start:"
+		"en"		"+ Cash on Round Start:"
 		"hu"		"Kör eleji plusz pénz:"
 	}
 	

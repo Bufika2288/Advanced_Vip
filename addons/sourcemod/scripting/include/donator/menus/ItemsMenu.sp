@@ -13,22 +13,22 @@ Menu BuildItemMenu(int client)
 	Menu menu = new Menu(Menu_Items);
 	
 	Format(buffer, sizeof(buffer), "%T", "HealthShot", LANG_SERVER);
-	Format(buffer2, sizeof(buffer2), "%s", gb_ItemHealthShot[ client ] ? "[✔️]":"[❌]");
+	Format(buffer2, sizeof(buffer2), "%s", gb_ItemHealthShot[ client ] ? "[Enabled]":"[Disabled]");
 	Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 	menu.AddItem("HealthShot", buffer3);
 	
 	Format(buffer, sizeof(buffer), "%T", "Tagrenade", LANG_SERVER);
-	Format(buffer2, sizeof(buffer2), "%s", gb_ItemTagrenade[ client ] ? "[✔️]":"[❌]");
+	Format(buffer2, sizeof(buffer2), "%s", gb_ItemTagrenade[ client ] ? "[Enabled]":"[Disabled]");
 	Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 	menu.AddItem("Tagrenade", buffer3);
 	
 	Format(buffer, sizeof(buffer), "%T", "Zeus", LANG_SERVER);
-	Format(buffer2, sizeof(buffer2), "%s", gb_ItemZeus[ client ] ? "[✔️]":"[❌]");
+	Format(buffer2, sizeof(buffer2), "%s", gb_ItemZeus[ client ] ? "[Enabled]":"[Disabled]");
 	Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 	menu.AddItem("Zeus", buffer3);
 	
 	Format(buffer, sizeof(buffer), "%T", "Defuse Kit", LANG_SERVER);
-	Format(buffer2, sizeof(buffer2), "%s", gb_ItemDefuseKit[ client ] ? "[✔️]":"[❌]");
+	Format(buffer2, sizeof(buffer2), "%s", gb_ItemDefuseKit[ client ] ? "[Enabled]":"[Disabled]");
 	Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 	menu.AddItem("Defuse Kit", buffer3);
 		

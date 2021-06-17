@@ -125,3 +125,38 @@ public void Set_Player_Color(any userid, char[] sColorToSet, bool bSilent)
 		CPrintToChat(client, "%s", sMessage);
 	}
 }
+
+public void Set_Player_BodyType(any userid, char[] sBodyType)
+{
+	int client = GetClientOfUserId(userid);
+	if (!client)
+		return;
+		
+	if (StrEqual(sBodyType, "SuperFat"))
+	{
+		ScaleEntity(client, 1, 1.6);
+	}
+	
+	if (StrEqual(sBodyType, "Fat"))
+	{
+		ScaleEntity(client, 1, 1.3);
+	}
+	
+	
+	if (StrEqual(sBodyType, "BodyNormal"))
+	{
+		ScaleEntity(client, 1, 1.0);
+	}
+	
+	
+	if (StrEqual(sBodyType, "Skinny"))
+	{
+		ScaleEntity(client, 1, 0.7);
+	}
+	
+	if (StrEqual(sBodyType, "SuperSkinny"))
+	{
+		ScaleEntity(client, 1, 0.5);
+	}
+	
+}

@@ -16,7 +16,7 @@ Menu BuildPerkMenu(int client)
 	if (GetConVarBool(sm_enable_hop))
 	{
 		Format(buffer, sizeof(buffer), "%T", "Bunnyhopp", LANG_SERVER);
-		Format(buffer2, sizeof(buffer2), "%s", gb_PerkBunnyhop[client] ? "[✔️]":"[❌]");
+		Format(buffer2, sizeof(buffer2), "%s", gb_PerkBunnyhop[client] ? "[Enabled]":"[Disabled]");
 		Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 		menu.AddItem("Bunnyhop", buffer3);
 	}
@@ -24,7 +24,7 @@ Menu BuildPerkMenu(int client)
 	if (GetConVarInt(sm_health_onspawn) != 0)
 	{
 		Format(buffer, sizeof(buffer), "%T", "HP on spawn", LANG_SERVER);
-		Format(buffer2, sizeof(buffer2), "%s", gb_PerkHp[ client ] ? "[✔️]":"[❌]");
+		Format(buffer2, sizeof(buffer2), "%s", gb_PerkHp[ client ] ? "[Enabled]":"[Disabled]");
 		Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 		menu.AddItem("HpSpawn", buffer3);
 	}
@@ -32,7 +32,7 @@ Menu BuildPerkMenu(int client)
 	if (GetConVarInt(sm_armor_onspawn) != 0)
 	{
 		Format(buffer, sizeof(buffer), "%T", "Armor on spawn", LANG_SERVER);
-		Format(buffer2, sizeof(buffer2), "%s", gb_PerkArmor[ client ] ? "[✔️]":"[❌]");
+		Format(buffer2, sizeof(buffer2), "%s", gb_PerkArmor[ client ] ? "[Enabled]":"[Disabled]");
 		Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 		menu.AddItem("ArmorSpawn", buffer3);
 	}
@@ -40,7 +40,7 @@ Menu BuildPerkMenu(int client)
 	if (GetConVarInt(sm_round_start_money) != 0)
 	{
 		Format(buffer, sizeof(buffer), "%T", "Cash on Round end", LANG_SERVER);
-		Format(buffer2, sizeof(buffer2), "%s", gb_PerkCash[ client ] ? "[✔️]":"[❌]");
+		Format(buffer2, sizeof(buffer2), "%s", gb_PerkCash[ client ] ? "[Enabled]":"[Disabled]");
 		Format(buffer3, sizeof(buffer3), "%s %s", buffer, buffer2);
 		menu.AddItem("CashSpawn", buffer3);
 	}
