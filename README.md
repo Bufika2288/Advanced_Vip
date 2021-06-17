@@ -9,6 +9,10 @@
 Its a Basic Donator/Vip menu. With a little bit more fun then usual.
 Im not a pro coder so the plugin probably not optimazed that well :)
 
+Installing modules:
+
+Just drop everything in your addons folder and change map / Restart the server.
+
 
 What is great about this plugin:
 
@@ -27,7 +31,7 @@ By default:
 - sm_donator 
 - sm_donatormenu
 
-but u can register your own with ```sm_donatormenu_commands``` cvar
+but u can register your owns with ```sm_donatormenu_commands``` cvar
 
 # Functions
 
