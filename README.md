@@ -9,13 +9,14 @@
 Its a Basic Donator/Vip menu. With a little bit more fun then usual.
 Im not a pro coder so the plugin probably not optimazed that well :)
 
-Installing modules:
+## Installing modules:
 
 Just drop everything in your addons folder and change map / Restart the server.
 
 
-What is great about this plugin:
 
+
+### What is great about this plugin:
 
 - 100% Translate support
 - Chat processor support
