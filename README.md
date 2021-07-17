@@ -1,4 +1,4 @@
-# Donator-Menu
+# Advanced Vip/Donator Menu
 
 [Alliedmods post]: https://forums.alliedmods.net/showthread.php?p=2750375#post2750375
 [Raining Money]: https://forums.alliedmods.net/showthread.php?p=2558324
