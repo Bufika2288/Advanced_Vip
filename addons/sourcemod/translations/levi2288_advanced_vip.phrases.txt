@@ -1,6 +1,6 @@
 "Phrases"
 {
-//CHAT 
+//CHAT
 // Note: You can use colors here
 
 	"Chat Tag"
@@ -89,11 +89,35 @@
 		"hu"		"{default}Ez a funkció nincs bekapcsolva :/"
 	}
 	
-	"Spawn Invalid Team"
+	"Invalid Team"
 	{
 		"#format" 	"{1:s}"
-		"en"		"{default}Spawn {red}Failed {default}(Your team {red}{1:s})!"
+		"en"		"{default}{red}Invalid{default} team{default}(Your team {red}{1:s})!"
 		"hu"		"{default}Egy valid csapatban kell lenned hogy használhatsd ezt a parancsot! Csapatod: {red}{1:s}"
+	}
+	
+	"Not enough money"
+	{
+		"en"		"{default}Not enough {red}money!"
+		"hu"		"{default}Nincs elég {red}pénzed!"
+	}
+	
+	"Not in buyzone"
+	{
+		"en"		"{default}You are not in the {red}buyzone!"
+		"hu"		"{default}Nem tartózkodsz a vásárló zónában!"
+	}
+	
+	"Buytime Over"
+	{
+		"en"		"{default}The buytime is over! Wait until the next round"
+		"hu"		"{default}A vásárlási idö lejárt! Várj a következö körig."
+	}
+	
+	"Player dead"
+	{
+		"en"		"{default}You are {red}dead! Wait until the next round to buy weapons."
+		"hu"		"{default}Halott vagy! Várj a következö körig hogy vehess fegyvereket."
 	}
 //Menus Titles
 
@@ -180,6 +204,44 @@
 		"en"		"PlaySound Menu"
 		"hu"		"PlaySound Menu"
 	}
+	
+	"T Weapon Main"
+	{
+		"en"		"Select T weapon group:"
+		"hu"		"Select T weapon group:"
+	}
+	
+	"CT Weapon Main"
+	{
+		"en"		"Select CT weapon group:"
+		"hu"		"Select CT weapon group:"
+	}
+	
+	"T Pistols"
+	{
+		"en"		"T Pistols:"
+		"hu"		"T Pistols:"
+	}
+	
+	"CT Pistols"
+	{
+		"en"		"CT Pistols:"
+		"hu"		"CT Pistols:"
+	}
+	
+	"T Rifles"
+	{
+		"en"		"T Rifles:"
+		"hu"		"T Rifles:"
+	}
+	
+	"CT Rifles"
+	{
+		"en"		"CT Rifles:"
+		"hu"		"CT Rifles:"
+	}
+	
+	
 	
 //Menu Buttons
 
@@ -447,7 +509,7 @@
 	
 	"Cash on Round end"
 	{
-		"en"		"+ Cash on Round Start:"
+		"en"		"Cash on Round Start:"
 		"hu"		"Kör eleji plusz pénz:"
 	}
 	
@@ -502,5 +564,26 @@
 	{
 		"en"		"T win"
 		"hu"		"T win"
+	}
+
+
+//Weapon Menu 
+
+	"Pistols"
+	{
+		"en"		"Pistols"
+		"hu"		"Pistols"
+	}
+	
+	"Rifles"
+	{
+		"en"		"Rifles"
+		"hu"		"Rifles"
+	}
+	
+	"More weapons"
+	{
+		"en"		"More weapons"
+		"hu"		"More weapons"
 	}
 }

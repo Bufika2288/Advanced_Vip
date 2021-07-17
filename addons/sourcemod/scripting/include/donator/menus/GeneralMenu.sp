@@ -31,7 +31,27 @@ Menu BuildGeneralMenu()
 	return menu;
 	
 }
+/*
+Menu BuildTagListMenu()
+{
+	
+	Menu menu = new Menu(Menu_TagList);
+	
+ 	menu.AddItem("Disable", "Disable Tag");
+	for(int i = 0; i < g_cTabTag; i++)
+	{
+		menu.AddItem(g_cTabTag, g_cTabTag[i]);
+	}
+	
+	
+	menu.SetTitle("Tag List:");
+	menu.ExitBackButton = true;
+	menu.Pagination = 8;
+	
+	return menu;
 
+}
+*/
 //////////////////////////////////////
 ///////////Menu Handlers//////////////
 //////////////////////////////////////
@@ -64,3 +84,32 @@ public int Menu_General(Menu menu, MenuAction action, int param1, int param2)
 		}
 	}
 }
+
+/*
+public int Menu_TagList(Menu menu, MenuAction action, int param1, int param2)
+{
+	switch(action){
+		
+		case MenuAction_Select:
+		{	
+			char item[256];
+			menu.GetItem(param2, item, sizeof(item));
+			
+			if (StrEqual(item, "Tag")) 
+			{
+				g_TagList.Display(param1, MENU_TIME_FOREVER);
+			}
+			
+			if (StrEqual(item, "Disable")) 
+			{	
+				CS_SetClientClanTag(iClient, "");
+			}
+		}
+		case MenuAction_End:
+		{
+			g_GeneralMenu.Display(param1, MENU_TIME_FOREVER);
+			
+		}
+	}
+}
+*/

@@ -44,7 +44,7 @@ but u can register your owns with ```sm_donatormenu_commands``` cvar
 - Open Fake Case (U need this plugin for it [Fake Case])
 - Fake Vac Kick (U need this plugin for it [Fake Vac Kick])
 - Body Color ([Body Color Example])
-- Body Size
+- Body Size ([Body Size Example])
 - Body Transparency 
 - Spawn Things (Ball, SnowBall Pile, Chicken)
 
