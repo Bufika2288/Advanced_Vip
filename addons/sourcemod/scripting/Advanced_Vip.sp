@@ -809,7 +809,7 @@ public int CT_WeaponPistols(Menu menu, MenuAction action, int param1, int param2
 	
 	if(action == MenuAction_Cancel)
 	{
-	      if(param2 == MenuCancel_ExitBack) 
+	    if(param2 == MenuCancel_ExitBack) 
 		{
 			g_CTWeaponMain.Display(param1, MENU_TIME_FOREVER);
 		}
