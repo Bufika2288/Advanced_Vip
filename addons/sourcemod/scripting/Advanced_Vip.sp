@@ -175,7 +175,7 @@ int g_iRounds = 0;
 #include "donator/menus/ItemsMenu.sp"
 #include "donator/menus/Cookies.sp"
 #include "donator/menus/PerkMenu.sp"
-#include "donator/Advanced_vip.inc"
+#include "Advanced_vip.inc"
 
 public Plugin myinfo = 
 {
